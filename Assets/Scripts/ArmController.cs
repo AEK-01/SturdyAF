@@ -17,10 +17,11 @@ public class ArmController : MonoBehaviour
             arms[whichArm].RotatePartOne(Arm1speed);
         if (Input.GetKey(KeyCode.X))
             arms[whichArm].RotatePartOne(-Arm1speed);
-
+        
         if (Input.GetKey(KeyCode.Comma))
             arms[whichArm].RotatePartTwo(Arm2speed);
         if (Input.GetKey(KeyCode.Period))
             arms[whichArm].RotatePartTwo(-Arm2speed);
+
     }
 }
