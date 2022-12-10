@@ -8,7 +8,7 @@ public class ArmController : MonoBehaviour
     public List<Arm> arms;
     public float Arm1speed = 1.0f;
     public float Arm2speed = 1.0f;
-    private void Update()
+    private void FixedUpdate()
     { 
         if(Input.GetKeyDown(KeyCode.LeftShift))
             whichArm = whichArm+1 == arms.Count ? 0 : whichArm+1;
